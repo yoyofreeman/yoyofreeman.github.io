@@ -13,7 +13,7 @@
     
     
     
-    <title>我的学习和实验记录 | 以无厚入有间，自勉之！</title>
+    <title>Tags: jekyll | 我的学习和实验记录 | 以无厚入有间，自勉之！</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
@@ -23,7 +23,7 @@
     <meta name="description" content="我是一个兴趣广泛而且经常转移注意力的人，寄希望通过此方式能及时捕捉和记录自己的灵感，时时提醒自己的努力方向不要发生太大的偏差。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="我的学习和实验记录">
-<meta property="og:url" content="https://yoyofreeman.github.io/index.html">
+<meta property="og:url" content="https://yoyofreeman.github.io/tags/jekyll/index.html">
 <meta property="og:site_name" content="我的学习和实验记录">
 <meta property="og:description" content="我是一个兴趣广泛而且经常转移注意力的人，寄希望通过此方式能及时捕捉和记录自己的灵感，时时提醒自己的努力方向不要发生太大的偏差。">
 <meta property="og:locale" content="zh">
@@ -64,7 +64,7 @@
     <div class="scroll-wrap flex-col">
       <ul class="nav">
         
-            <li class="waves-block waves-effect active">
+            <li class="waves-block waves-effect">
               <a href="/"  >
                 <i class="icon icon-lg icon-home"></i>
                 主页
@@ -78,7 +78,7 @@
               </a>
             </li>
         
-            <li class="waves-block waves-effect">
+            <li class="waves-block waves-effect active">
               <a href="/tags"  >
                 <i class="icon icon-lg icon-tags"></i>
                 标记
@@ -124,7 +124,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">我的学习和实验记录</div>
+        <div class="flex-col header-title ellipsis">Tags: jekyll</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -143,38 +143,58 @@
         
     </div>
 </header>
-<header class="content-header index-header">
+<header class="content-header tags-header">
 
     <div class="container fade-scale">
-        <h1 class="title">我的学习和实验记录</h1>
+        <h1 class="title">Tags: jekyll</h1>
         <h5 class="subtitle">
-            
-                以无厚入有间，自勉之！
             
         </h5>
     </div>
 
     
+<div class="tabs-bar container">
+    <nav class="tags-list">
+        <a href="/tags" style="-webkit-order:-1;order:-1" class="tags-list-item waves-effect waves-button waves-light
+            ">All</a>
+        
+
+            <a href="/tags/jekyll/" style="-webkit-order:0;order:0" class="tags-list-item waves-effect waves-button waves-light active">jekyll</a>
+
+        
+
+            <a href="/tags/hexo/" style="-webkit-order:1;order:1" class="tags-list-item waves-effect waves-button waves-light">hexo</a>
+
+        
+
+            <a href="/tags/博客维护/" style="-webkit-order:2;order:2" class="tags-list-item waves-effect waves-button waves-light">博客维护</a>
+
+        
+    </nav>
+    <!-- PC show more-->
+    <div class="tags-list-more">
+        <a href="javascript:;" onclick="BLOG.tabBar(this)" class="action tags-list-item waves-effect waves-circle waves-light"><i class="icon icon-ellipsis-h"></i></a>
+    </div>
+</div>
+
 
 
 </header>
 
-<div class="container body-wrap">
-
-    <ul class="post-list">
+<div class="container body-wrap fade">
     
-        <li class="post-list-item fade">
-            <article id="post-demo"
-  class="article-card article-type-post" itemprop="blogPost">
+            <div class="waterfall">
+          
 
+            <div class="waterfall-item">
+  <article class="article-card archive-article">
     <div class="post-meta">
-        <time class="post-time" title="2018-01-22 22:40:10" datetime="2018-01-22T14:40:10.000Z"  itemprop="datePublished">2018-01-22</time>
+      <time class="post-time" title="2018-01-22 22:40:10" datetime="2018-01-22T14:40:10.000Z"  itemprop="datePublished">2018-01-22</time>
 
-        
+      
 
 
     </div>
-
     
 
 
@@ -186,19 +206,6 @@
 
 
 
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        受够了jekyll超慢的渲染速度和一点都不清爽的外观，所以决定迁移到hexo。
-主题使用的是indigo，评论系统准备使用gitment，等先上转来几篇文章再搞掂它。
-
-    
-
-        <a href="/2018/01/22/demo/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
     
     <div class="post-footer">
         
@@ -206,55 +213,15 @@
 
     </div>
     
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-hello-world"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2018-01-22 09:03:31" datetime="2018-01-22T01:03:31.550Z"  itemprop="datePublished">2018-01-22</time>
+  </article>
+</div>
 
         
-
-
-    </div>
-
+            </div>
+        
     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2018/01/22/hello-world/">Hello World</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-    
-
-        <a href="/2018/01/22/hello-world/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-    </ul>
-
-    
-
 </div>
+
 
         <footer class="footer">
     <div class="top">
@@ -295,7 +262,7 @@ Qu...
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://yoyofreeman.github.io/&title=我的学习和实验记录&pic=https://yoyofreeman.github.io/img/avatar.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://yoyofreeman.github.io/tags/jekyll/&title=我的学习和实验记录&pic=https://yoyofreeman.github.io/img/avatar.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -305,22 +272,22 @@ Qu...
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://yoyofreeman.github.io/&title=我的学习和实验记录&source=我是一个兴趣广泛而且经常转移注意力的人，寄希望通过此方式能及时捕捉和记录自己的灵感，时时提醒自己的努力方向不要发生太大的偏差。" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://yoyofreeman.github.io/tags/jekyll/&title=我的学习和实验记录&source=我是一个兴趣广泛而且经常转移注意力的人，寄希望通过此方式能及时捕捉和记录自己的灵感，时时提醒自己的努力方向不要发生太大的偏差。" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://yoyofreeman.github.io/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://yoyofreeman.github.io/tags/jekyll/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=我的学习和实验记录&url=https://yoyofreeman.github.io/&via=https://yoyofreeman.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=我的学习和实验记录&url=https://yoyofreeman.github.io/tags/jekyll/&via=https://yoyofreeman.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://yoyofreeman.github.io/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://yoyofreeman.github.io/tags/jekyll/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -331,7 +298,7 @@ Qu...
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABwUlEQVR42u3aQY7DIAwF0Nz/0pntjEZNv+1AquqxqqoQHllYxuY44nH+Gq/+uZ71/8nruaOBi4s75p6XI3mmh87fj4uL+xT31TLJq69nJXMTAy4u7udzr3/nG8bFxf0ObjW0Xac+uLi4n8xNDj931Ss2ndVwcXEH3EnQuev3kvouLi5ui3sWx3UTpcoqr46Li7uF20tf8gQlwVXXxcXFXc2thqQ3+y5evyjPwsXF3chNSqL59nqpTFQcwcXF3cLtBZTe9Ys8oWkWUHBxcZdxk6NL9cAzaZy82SouLu5ibuECRDFgVb9ZFP5wcXG3cHPovYEpPzjh4uLu4SaTeyXRuy51/XkDLi7uFm41xFTLnZNNRocfXFzcZdxqyaOaoBzF0QxhuLi4C7jVZeY3wnr/4OLi7uTmF7B6TdZJkoSLi/sUd5Kg9OjNxAgXF3cx9yyOSeu02prFxcV9ilstVVSvTSTPJ8G0vBlcXNwxN1mmepEiSW6SI9DR+yq4uLg3cfNAk7DKiEkrBRcX98O4ve5n9YhVLpji4uI+xM0POZOrGM1WCi4u7k3caoIyb8o2iya4uLhbuOVQErdGlqQ4uLi4a7k/J87DQlkZV7UAAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABt0lEQVR42u3ay47CMAwF0P7/T3fWIwS9tpvw0MkKQUmOurD8yHHE63y5nj3z+P3jnseKhYuLO+ZOKAno9Z65ARcXdz/3WcTIg041qCX74+Lifgs3PyYJW7i4uL/B7ZU6vUCJi4v7Xm6vUEkOyAPizbUaLi7ugJt3Kdd9XtLfxcXFbXHP4rqXVT4dFxd3C7faDM3DUNIq7Z2Li4u7mptvmg9WJ7iLgS4uLu7HcCcj1TyViV4WLi7uFm7e+EhGJnclNFH5hIuLu5GbHNAbctycSOHi4i7mTsqb3qWrauEUvS1cXNybuNWkJPl1YeMVFxd3O3ee6CRD2erNin874OLibuROrkok/8qTmItkCBcXdws3eWgyIj1aq9DZxcXF3cKdNEkLZczgG1xc3Pdyk0Qkv05Rff7pS8TFxd3OzZOP3hWK6g5NBC4u7oB7FlcveOWXMAp1FS4u7jJutVUxuUhRbn9Mmiy4uLhjbh68esPU6mWOizeKi4u7kVsNNNVkZXmthouL+2HcajGThE5cXNzv4vagd13IwMXF3cntjT/no9NyGMXFxd3CrYaS3gCml+KM+ru4uLgd7h+nmCn4dBlfoQAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 
