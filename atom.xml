@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yoyofreeman.github.io/"/>
-  <updated>2018-01-22T01:03:31.554Z</updated>
+  <updated>2018-01-22T14:52:09.976Z</updated>
   <id>https://yoyofreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从jekyll迁移到hexo</title>
+    <link href="https://yoyofreeman.github.io/2018/01/22/demo/"/>
+    <id>https://yoyofreeman.github.io/2018/01/22/demo/</id>
+    <published>2018-01-22T14:40:10.000Z</published>
+    <updated>2018-01-22T14:52:09.976Z</updated>
+    
+    <content type="html"><![CDATA[<p>受够了jekyll超慢的渲染速度和一点都不清爽的外观，所以决定迁移到hexo。</p><p>主题使用的是indigo，评论系统准备使用gitment，等先上转来几篇文章再搞掂它。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;受够了jekyll超慢的渲染速度和一点都不清爽的外观，所以决定迁移到hexo。&lt;/p&gt;
+&lt;p&gt;主题使用的是indigo，评论系统准备使用gitment，等先上转来几篇文章再搞掂它。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="jekyll hexo 博客维护" scheme="https://yoyofreeman.github.io/tags/jekyll-hexo-%E5%8D%9A%E5%AE%A2%E7%BB%B4%E6%8A%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
