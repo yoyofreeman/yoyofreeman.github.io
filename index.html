@@ -34,7 +34,7 @@
         <link rel="alternate" type="application/atom+xml" title="我的学习和实验记录" href="/atom.xml">
     
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
     <script>window.lazyScripts=[]</script>
 
     <!-- custom head --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
@@ -190,8 +190,8 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        受够了jekyll超慢的渲染速度和一点都不清爽的外观，所以决定迁移到hexo。
-主题使用的是indigo，评论系统准备使用gitment，等先上转来几篇文章再搞掂它。
+        <p>受够了jekyll超慢的渲染速度和一点都不清爽的外观，所以决定迁移到hexo。</p>
+<p>主题使用的是indigo，评论系统准备使用gitment，等先上转来几篇文章再搞掂它。</p>
 
     
 
@@ -237,8 +237,16 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
     
 
         <a href="/2018/01/22/hello-world/" class="post-more waves-effect waves-button">
@@ -283,15 +291,35 @@ Qu...
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        12import mxnet.ndarray as ndimport mxnet.autograd as ag
-12x = nd.array([[1,2],[3,4]])x
-[[ 1.  2.]
+        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> mxnet.ndarray <span class="keyword">as</span> nd</span><br><span class="line"><span class="keyword">import</span> mxnet.autograd <span class="keyword">as</span> ag</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = nd.array([[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">3</span>,<span class="number">4</span>]])</span><br><span class="line">x</span><br></pre></td></tr></table></figure>
+<pre><code>[[ 1.  2.]
  [ 3.  4.]]
 &lt;NDArray 2x2 @cpu(0)&gt;
-1x.attach_grad()
-123with ag.record():    y=x*2    z=y*x
-1z
-...
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x.attach_grad()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> ag.record():</span><br><span class="line">    y=x*<span class="number">2</span></span><br><span class="line">    z=y*x</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">z</span><br></pre></td></tr></table></figure>
+<pre><code>[[  2.   8.]
+ [ 18.  32.]]
+&lt;NDArray 2x2 @cpu(0)&gt;
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">z.backward()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x.grad</span><br></pre></td></tr></table></figure>
+<pre><code>[[  4.   8.]
+ [ 12.  16.]]
+&lt;NDArray 2x2 @cpu(0)&gt;
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x.grad == <span class="number">4</span>*x</span><br></pre></td></tr></table></figure>
+<pre><code>[[ 1.  1.]
+ [ 1.  1.]]
+&lt;NDArray 2x2 @cpu(0)&gt;
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">(a)</span>:</span></span><br><span class="line">    b = a*<span class="number">2</span></span><br><span class="line">    <span class="keyword">while</span> nd.norm(b).asscalar()&lt;<span class="number">1000</span>:</span><br><span class="line">        b=b*<span class="number">2</span></span><br><span class="line">    <span class="keyword">if</span> nd.sum(b).asscalar()&gt;<span class="number">0</span>:</span><br><span class="line">        c=b</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        c=<span class="number">100</span>*b</span><br><span class="line">    <span class="keyword">return</span> c</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a=nd.random_normal(shape=<span class="number">3</span>)</span><br><span class="line">a.attach_grad()</span><br><span class="line"><span class="keyword">with</span> ag.record():</span><br><span class="line">    c=f(a)</span><br><span class="line">c.backward()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a.grad</span><br></pre></td></tr></table></figure>
+<pre><code>[ 1024.  1024.  1024.]
+&lt;NDArray 3 @cpu(0)&gt;
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a.grad == c/a</span><br></pre></td></tr></table></figure>
+<pre><code>[ 1.  1.  1.]
+&lt;NDArray 3 @cpu(0)&gt;
+</code></pre>
     
 
         <a href="/2018/01/19/MXnet-leaning-1/" class="post-more waves-effect waves-button">
@@ -336,17 +364,64 @@ Qu...
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        1from mxnet import ndarray as nd
-1nd.zeros((3,4))
-[[ 0.  0.  0.  0.]
+        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> mxnet <span class="keyword">import</span> ndarray <span class="keyword">as</span> nd</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nd.zeros((<span class="number">3</span>,<span class="number">4</span>))</span><br></pre></td></tr></table></figure>
+<pre><code>[[ 0.  0.  0.  0.]
  [ 0.  0.  0.  0.]
  [ 0.  0.  0.  0.]]
 &lt;NDArray 3x4 @cpu(0)&gt;
-1x=nd.ones((3,4))
-1x
-[[ 1.  1.  1.  1.]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x=nd.ones((<span class="number">3</span>,<span class="number">4</span>))</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x</span><br></pre></td></tr></table></figure>
+<pre><code>[[ 1.  1.  1.  1.]
  [ 1.  1.  1.  1.]
- [...
+ [ 1.  1.  1.  1.]]
+&lt;NDArray 3x4 @cpu(0)&gt;
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nd.array([[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">2</span>,<span class="number">3</span>]])</span><br></pre></td></tr></table></figure>
+<pre><code>[[ 1.  2.]
+ [ 2.  3.]]
+&lt;NDArray 2x2 @cpu(0)&gt;
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">y=nd.random_normal(<span class="number">0</span>,<span class="number">1</span>,shape=(<span class="number">3</span>,<span class="number">4</span>))</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">y</span><br></pre></td></tr></table></figure>
+<pre><code>[[-1.41046536  0.86718196 -0.96721923 -1.62415552]
+ [ 0.53269351  0.5520854   0.07244179  0.86628568]
+ [ 0.43719599  0.88222224  0.54185236  0.29071844]]
+&lt;NDArray 3x4 @cpu(0)&gt;
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">y.shape</span><br></pre></td></tr></table></figure>
+<pre><code>(3L, 4L)
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">y.size</span><br></pre></td></tr></table></figure>
+<pre><code>12L
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nd.dot(x,y.T)</span><br></pre></td></tr></table></figure>
+<pre><code>[[ 1.25636935  2.913872   -1.33167279]
+ [ 1.25636935  2.913872   -1.33167279]
+ [ 1.25636935  2.913872   -1.33167279]]
+&lt;NDArray 3x3 @cpu(0)&gt;
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nd.exp(y)</span><br></pre></td></tr></table></figure>
+<pre><code>[[ 1.35027397  1.2599504   2.85573411  0.72300488]
+ [ 0.99025893  2.08936954  5.58583689  1.59450626]
+ [ 0.34186557  2.40631938  0.76553756  0.41926315]]
+&lt;NDArray 3x4 @cpu(0)&gt;
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a=nd.arange(<span class="number">3</span>).reshape((<span class="number">3</span>,<span class="number">1</span>))</span><br><span class="line">b=nd.arange(<span class="number">2</span>).reshape((<span class="number">1</span>,<span class="number">2</span>))</span><br><span class="line">print(<span class="string">'a:'</span>,a)</span><br><span class="line">print(<span class="string">'b:'</span>,b)</span><br><span class="line">print(<span class="string">'a+b'</span>,a+b)</span><br></pre></td></tr></table></figure>
+<pre><code>(&#39;a:&#39;,
+[[ 0.]
+ [ 1.]
+ [ 2.]]
+&lt;NDArray 3x1 @cpu(0)&gt;)
+(&#39;b:&#39;,
+[[ 0.  1.]]
+&lt;NDArray 1x2 @cpu(0)&gt;)
+(&#39;a+b&#39;,
+[[ 0.  1.]
+ [ 1.  2.]
+ [ 2.  3.]]
+&lt;NDArray 3x2 @cpu(0)&gt;)
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">x=np.ones((<span class="number">2</span>,<span class="number">3</span>))</span><br><span class="line">y=nd.array(x)</span><br><span class="line">z=y.asnumpy()</span><br><span class="line">print([z,y])</span><br></pre></td></tr></table></figure>
+<pre><code>[array([[ 1.,  1.,  1.],
+       [ 1.,  1.,  1.]], dtype=float32),
+[[ 1.  1.  1.]
+ [ 1.  1.  1.]]
+&lt;NDArray 2x3 @cpu(0)&gt;]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
     
 
         <a href="/2018/01/19/MXnet-leaning/" class="post-more waves-effect waves-button">
@@ -357,92 +432,6 @@ Qu...
     <div class="post-footer">
         
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI/">AI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MXnet/">MXnet</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习/">学习</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-svg-test"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2018-01-16 23:04:00" datetime="2018-01-16T15:04:00.000Z"  itemprop="datePublished">2018-01-16</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2018/01/16/svg-test/">SVG图片测试页面</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
-
-
-
-
-
-
-  
-    
-    
-
-    
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-        <a href="/2018/01/16/svg-test/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/svg/">svg</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客维护/">博客维护</a></li></ul>
 
     </div>
     
@@ -477,8 +466,11 @@ Qu...
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        
-i={\sqrt[{n}]{\left({\frac {FV}{PV}}\right)}}-1\alpha+\beta=\gammax = {-b \pm \sqrt{b^2-4ac} \over 2a}.ax^2 + bx + c = 0\sum_{i=1}^n a_i=0f(x)=x^{x^x}f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots...
+        <script type="math/tex; mode=display">
+i={\sqrt[{n}]{\left({\frac {FV}{PV}}\right)}}-1</script><script type="math/tex; mode=display">\alpha+\beta=\gamma</script><script type="math/tex; mode=display">x = {-b \pm \sqrt{b^2-4ac} \over 2a}.</script><script type="math/tex; mode=display">ax^2 + bx + c = 0</script><script type="math/tex; mode=display">\sum_{i=1}^n a_i=0</script><script type="math/tex; mode=display">f(x)=x^{x^x}</script><script type="math/tex; mode=display">f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2</script><script type="math/tex; mode=display">f(x,y,z) = 3y^2 z \left( 3 + \frac{7x+5}{1 + y^2} \right).</script><script type="math/tex; mode=display">\left. \frac{du}{dx} \right|_{x=0}.</script><script type="math/tex; mode=display">sum_{i=1}^{2n}</script><script type="math/tex; mode=display">\sum_{k=1}^n k^2 = \frac{1}{2} n (n+1).</script><script type="math/tex; mode=display">\int_a^b f(x)\,dx.</script><script type="math/tex; mode=display">\int_0^{+\infty} x^n e^{-x} \,dx = n!.</script><script type="math/tex; mode=display">\int \cos \theta \,d\theta = \sin \theta.</script><script type="math/tex; mode=display">\int_{x^2 + y^2 \leq R^2} f(x,y)\,dx\,dy
+= \int_{\theta=0}^{2\pi} \int_{r=0}^R
+f(r\cos\theta,r\sin\theta) r\,dr\,d\theta.</script><p>and</p>
+<script type="math/tex; mode=display">\int_0^R \frac{2x\,dx}{1+x^2} = \log(1+R^2).</script>
     
 
         <a href="/2018/01/16/Math-test/" class="post-more waves-effect waves-button">
@@ -489,6 +481,92 @@ i={\sqrt[{n}]{\left({\frac {FV}{PV}}\right)}}-1\alpha+\beta=\gammax = {-b \pm \s
     <div class="post-footer">
         
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mathjax/">mathjax</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客维护/">博客维护</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-svg-test"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2018-01-16 23:04:00" datetime="2018-01-16T15:04:00.000Z"  itemprop="datePublished">2018-01-16</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2018/01/16/svg-test/">SVG图片测试页面</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px" height="320px" viewbox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+ <circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="32" cy="32" r="16"/>
+ <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="32" y1="10" x2="32" y2="0"/>
+ <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="32" y1="64" x2="32" y2="54"/>
+ <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="54" y1="32" x2="64" y2="32"/>
+ <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="0" y1="32" x2="10" y2="32"/>
+ <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="48" y1="16" x2="53" y2="11"/>
+ <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="11" y1="53" x2="16" y2="48"/>
+ <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="48" y1="48" x2="53" y2="53"/>
+ <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="11" y1="11" x2="16" y2="16"/>
+</g>
+
+</svg>
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="480px" height="480px" viewbox="0 0 145 145" enable-background="new 0 0 145 145" xml:space="preserve">
+
+<svg enable-background="new 0 0 145 145" id="Layer_2" version="1.1" viewbox="0 0 145 145" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <path d="M95.727,56.11c-2.29-3.814-4.565-6.092-4.617-6.146c-0.48-0.48-2.289,1.668-2.791,2.309   c-0.762,0.981-2.563,2.625-6.367,4.876c-3.802,2.255-9.599,5.132-18.35,8.687c-3.747,1.524-6.766,3.085-9.192,4.666   c3.136-0.364,6.856-0.784,7.613-0.815c2.007-0.082-0.404,4.203-9.474,2.116c-1.186,0.895-2.195,1.796-3.047,2.699   c-1.388,1.474-2.355,2.959-2.971,4.422c-0.617,1.463-0.877,2.9-0.876,4.246c0.005,3.039,1.285,3.753,2.512,5.495   c1.234,1.746,3.872,2.962,3.872,2.962s-0.704-1.33-1.719-2.789c-1.022-1.463-1.976-3.455-1.971-5.668   c0.001-1.004,0.188-2.065,0.665-3.201c0.275-0.653,0.652-1.335,1.149-2.038c0.466,2.206,1.478,6.081,3.454,10.021   c1.499,2.98,3.555,4.208,6.406,6.524c2.844,2.317,6.521,5.686,11.017,5.679c0.11,0,0.221-0.001,0.332-0.003   c3.876-0.057,7.15-3.391,9.724-5.757c3.87-3.555,6.308-7.082,7.847-12.521c1.531-5.446,2.713-11.542,3.009-15.689   c0.522-7.306,0.163-10.061-0.246-11.266c0.572,0.787,1.188,1.696,1.808,2.743c2.096,3.534,4.127,8.399,4.123,13.856   c-0.002,3.122-0.653,6.447-2.35,9.907c-1.698,3.459-4.452,7.06-8.7,10.68c0,0,9.238-5.66,11.119-9.493   c1.882-3.831,2.628-7.595,2.626-11.095C100.33,65.29,98.012,59.922,95.727,56.11z M77.582,69h11.677C89.259,69,89.259,75,77.582,69   z"/>
+    <path d="M53.943,97.604c-0.348-0.031-0.705-0.008-1.062-0.028c-0.212-0.012-0.425-0.001-0.633-0.02 c-3.854-0.352-6.887-1.923-8.909-4.354c-2.018-2.434-3.053-5.744-2.744-9.682l0.018-0.214c0.262-2.885,1.129-5.415,2.495-7.631   c1.367-2.215,3.437-3.863,5.531-5.702c7.384-6.483,14.57-10.075,21.95-13.905c4.245-2.203,8.488-4.594,12.651-7.22   c0.93-0.589,1.652-1.372,2.303-2.16c0.65-0.79,1.234-1.593,1.838-2.262c0,0-8.906,4.272-12.152,5.812   c-9.81,4.656-19.593,9.548-28.099,16.587c-3.033,2.512-5.808,5.679-7.739,9.131c-1.279,2.286-2.037,4.649-2.252,7.027   c-0.347,3.803,0.713,7.618,3.108,11.164c1.28,1.9,2.797,3.31,4.487,4.276c1.689,0.967,3.541,1.487,5.471,1.66   c1.797,0.162,3.675-0.072,5.585-0.411l7.056-1.355l-7.128-0.644C55.143,97.622,54.545,97.659,53.943,97.604   z"/>
+
+    <path d="M49.823,71.043c0.97,0.317,1.875,0.565,2.726,0.76c0.576-0.435,1.197-0.869,1.86-1.301C51.934,70.79,49.823,71.043,49.823,71.043   z"/>
+
+
+  </g>
+</svg>
+
+
+
+<svg height="320" version="1.1" width="800" viewbox="0 0 80 200" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="44" cy="36" fill="#000000" rx="8.0" ry="7.5" stroke="#000000" stroke-width="1"/>
+<ellipse cx="44" cy="36" fill="#ffffff" rx="7.0" ry="6.5" stroke="#ffffff" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="44" x2="44" y1="44" y2="59"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="34" x2="54" y1="49" y2="49"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="44" x2="39" y1="59" y2="74"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="44" x2="49" y1="59" y2="74"/>
+<ellipse cx="214" cy="49" fill="#000000" rx="56.0" ry="22.0" stroke="#000000" stroke-width="1"/>
+<ellipse cx="214" cy="49" fill="#ffffff" rx="55.0" ry="21.0" stroke="#ffffff" stroke-width="1"/>
+<polyline fill="none" points="54,49 158,49" stroke="#333399" stroke-width="1"/>
+</svg>
+</svg>
+    
+
+        <a href="/2018/01/16/svg-test/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/svg/">svg</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客维护/">博客维护</a></li></ul>
 
     </div>
     
@@ -523,10 +601,55 @@ i={\sqrt[{n}]{\left({\frac {FV}{PV}}\right)}}-1\alpha+\beta=\gammax = {-b \pm \s
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        今天收到一个AI学习班的广告，其中给出了两个纳米证书学习班的报名地址：
-1234还未上车的小伙伴们猛戳下方链接，进入AI领域新浪潮：* 机器学习入门：http://t.cn/RKBcpp0* 机器学习进阶：http://t.cn/RKBUpxy首次报名课程可通过群内官方认证「优达好学长」优惠码，立减300元
-我没有银子交学费，但他们给出的学习内容倒是对我有很好的指导意义，我大概梳理一下：
-入...
+        <p>今天收到一个AI学习班的广告，其中给出了两个纳米证书学习班的报名地址：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">还未上车的小伙伴们猛戳下方链接，进入AI领域新浪潮：</span><br><span class="line">* 机器学习入门：http://t.cn/RKBcpp0</span><br><span class="line">* 机器学习进阶：http://t.cn/RKBUpxy</span><br><span class="line">首次报名课程可通过群内官方认证「优达好学长」优惠码，立减300元</span><br></pre></td></tr></table></figure>
+<p>我没有银子交学费，但他们给出的学习内容倒是对我有很好的指导意义，我大概梳理一下：</p>
+<h1 id="入门班学习内容："><a href="#入门班学习内容：" class="headerlink" title="入门班学习内容："></a>入门班学习内容：</h1><h2 id="第一部分-Python-语法与数据结构"><a href="#第一部分-Python-语法与数据结构" class="headerlink" title="第一部分 Python 语法与数据结构"></a>第一部分 Python 语法与数据结构</h2><ul>
+<li>了解Python的整数和字符串数据类型，学会使用变量存储数据，掌握使用内置的函数和方法。</li>
+<li>学习条件语句，循环语句完成复杂的统计。</li>
+<li>学会使用集合数据类型，包括列表、集合和字典等多种数据结构。</li>
+</ul>
+<h2 id="第二部分-Python-文件与网络"><a href="#第二部分-Python-文件与网络" class="headerlink" title="第二部分 Python 文件与网络"></a>第二部分 Python 文件与网络</h2><ul>
+<li>会使用 Python 标准库和第三方库中的模块，认识 Python 强大的库。</li>
+<li>学会读取磁盘上的文件中的数据，使用在线资源解决实际问题。</li>
+<li>练习编写一个网络抓取程序来跟踪维基百科文章之间的链接。</li>
+</ul>
+<h2 id="第三部分-数据分析入门"><a href="#第三部分-数据分析入门" class="headerlink" title="第三部分 数据分析入门"></a>第三部分 数据分析入门</h2><ul>
+<li>学习使用 Python 了解数据分析流程的主要步骤</li>
+<li>运用 Python 和 Pandas 处理多个数据集；并通过两个数据分析实战案例，学习使用 Python、Numpy 和 Pandas 进行数据清洗、探索、分析和可视化;</li>
+</ul>
+<h2 id="第四部分-线性代数基础"><a href="#第四部分-线性代数基础" class="headerlink" title="第四部分 线性代数基础"></a>第四部分 线性代数基础</h2><p>从0基础开始学习线性代数中的向量以及交点知识以及实现向量的基本操作。</p>
+<h2 id="第五部分-模型的评估与验证"><a href="#第五部分-模型的评估与验证" class="headerlink" title="第五部分 模型的评估与验证"></a>第五部分 模型的评估与验证</h2><p>学习如何衡量深度学习模型以及其他机器学习模型好坏。</p>
+<h2 id="第六部分-实战项目"><a href="#第六部分-实战项目" class="headerlink" title="第六部分 实战项目"></a>第六部分 实战项目</h2><h3 id="实战项目1-分析电话和短信记录"><a href="#实战项目1-分析电话和短信记录" class="headerlink" title="实战项目1 分析电话和短信记录"></a>实战项目1 分析电话和短信记录</h3><p>应用你在课程中学到的数据结构，字符串处理，循环等技巧，从电话和短信记录的数据中发现一些端倪。</p>
+<h3 id="实战项目2-探索美国共享单车数据"><a href="#实战项目2-探索美国共享单车数据" class="headerlink" title="实战项目2 探索美国共享单车数据"></a>实战项目2 探索美国共享单车数据</h3><ul>
+<li>借助Python完成对美国3个城市的共享单车行程数据的数据分析。</li>
+<li>编写代码来清理数据，计算描述性统计数据，并实现数据分布的基本可视化。</li>
+</ul>
+<h3 id="实战项目3-数据分析入门"><a href="#实战项目3-数据分析入门" class="headerlink" title="实战项目3 数据分析入门"></a>实战项目3 数据分析入门</h3><p>学习使用 Python 了解数据分析流程的主要步骤，运用 Python 和 Pandas 处理多个数据集；<br>通过两个数据分析实战案例，学习使用 Python、Numpy 和 Pandas 进行数据清洗、探索、分析和可视化；</p>
+<h3 id="实战项目4-线性代数"><a href="#实战项目4-线性代数" class="headerlink" title="实战项目4 线性代数"></a>实战项目4 线性代数</h3><p>通过代码实现一个矩阵求逆，更深刻的理解线性代数的本质。</p>
+<h3 id="实战项目5-预测未来房价"><a href="#实战项目5-预测未来房价" class="headerlink" title="实战项目5 预测未来房价"></a>实战项目5 预测未来房价</h3><p>运用机器学习原理与基础统计分析工具针对房地产数据建立一个模型、评估模型的表现好坏并利用这个模型预测未来房价。</p>
+<h1 id="进阶班学习内容："><a href="#进阶班学习内容：" class="headerlink" title="进阶班学习内容："></a>进阶班学习内容：</h1><h2 id="第一部分-机器学习基础"><a href="#第一部分-机器学习基础" class="headerlink" title="第一部分 机器学习基础"></a>第一部分 机器学习基础</h2><p>学习机器学习的基础知识，并初步了解一些机器学习可以完成的任务，如分类与回归问题，包括机器学习涉及到的统计分析知识以及模型评估和验证知识。</p>
+<h2 id="第二部分-监督学习"><a href="#第二部分-监督学习" class="headerlink" title="第二部分 监督学习"></a>第二部分 监督学习</h2><p>监督学习是通过已标注过的训练数据来完成分类或回归任务的一类机器学习方法。在这一部分中，将学习决策树，神经网络，支持向量机等监督学习算法。</p>
+<h2 id="第三部分-非监督学习"><a href="#第三部分-非监督学习" class="headerlink" title="第三部分 非监督学习"></a>第三部分 非监督学习</h2><p>当数据样本没有标签的情况下，非监督学习是其解决问题的最佳方案。在这一部分中，将学习聚类，特征工程和降维等非监督学习算法。</p>
+<h2 id="第四部分-强化学习"><a href="#第四部分-强化学习" class="headerlink" title="第四部分 强化学习"></a>第四部分 强化学习</h2><p>强化学习也是一类重要的机器学习方法，它是一个序列决策问题。在这一部分中，你将学习Markov 决策过程与博弈论等强化学习知识。</p>
+<h2 id="第五部分-深度学习"><a href="#第五部分-深度学习" class="headerlink" title="第五部分 深度学习"></a>第五部分 深度学习</h2><p>深度学习是当今世界上最火热的一类机器学习方法，在许多领域中甚至超过了人类的能力。在这一部分中，你将学会使用 Tensorflow，并且学习卷积神经网络等知识。</p>
+<h2 id="第六部分-毕业项目"><a href="#第六部分-毕业项目" class="headerlink" title="第六部分 毕业项目"></a>第六部分 毕业项目</h2><p>选择一个你最感兴趣的内容，用你所学的机器学习和技术解决它。在毕业报告中，如果有引用，也一定要注明出处。</p>
+<h2 id="实战项目"><a href="#实战项目" class="headerlink" title="实战项目"></a>实战项目</h2><h3 id="实战项目1-预测房价"><a href="#实战项目1-预测房价" class="headerlink" title="实战项目1 预测房价"></a>实战项目1 预测房价</h3><p>在此项目中，我们将对为马萨诸塞州波士顿地区的房屋价格收集的数据应用基本机器学习概念，以预测新房屋的销售价格。首先，你将探索这些数据以获取数据集的重要特征和描述性统计信息。接下来，你要正确地将数据拆分为测试数据集和训练数据集，并确定适用于此问题的性能指标。然后，你将使用不同的参数和训练集大小分析学习算法的性能图表。以上这些能够让你挑选最好地泛化到未见过的数据的最佳模型。最后，你将根据一个新样本测试此最佳模型并将预测的销售价格与统计数据进行比较。</p>
+<h3 id="实战项目2-慈善机构寻找捐助者"><a href="#实战项目2-慈善机构寻找捐助者" class="headerlink" title="实战项目2 慈善机构寻找捐助者"></a>实战项目2 慈善机构寻找捐助者</h3><p>在该项目中，你将把你学到的应用监督学习技术和分析数据的能力应用到美国人口普查收集到的数据中，来帮助一个慈善机构确定哪些人最有可能做捐助。首先你要了解普查数据是什么样的。其次，你要使用一系列数据转换和数据前处理技巧来把数据转变成可以工作的形式。你将把你选择的监督学习的算法应用在数据集上，找出最适合的算法。然后，你要优化你选出的这个模型，把他展示给慈善机构。最后，你需要深入探索这个模型以及它的预测，来看一下他对于给定的数据集表现如何。</p>
+<h3 id="实战项目3-创建客户细分"><a href="#实战项目3-创建客户细分" class="headerlink" title="实战项目3 创建客户细分"></a>实战项目3 创建客户细分</h3><p>在这个项目中，你将应用无监督学习技能研究葡萄牙里斯本的一家批发经销商产品花销数据，用于找出数据背后的客户群体。你会先选择一小部分样本，确定是否有任何产品类别是相互高度关联来进行数据研究。之后，你将通过扩展每个产品类别然后识别不需要的异常值来进行数据预处理。对完整的客户开支进行 PCA 转换，并利用聚类算法将数据进行分组。最后将此分组数据与其它分类方式得出来的分组进行比较，并思考这些信息如何帮助批发经销商改善日后的服务。</p>
+<h3 id="实战项目4-训练机器人走迷宫"><a href="#实战项目4-训练机器人走迷宫" class="headerlink" title="实战项目4 训练机器人走迷宫"></a>实战项目4 训练机器人走迷宫</h3><p>在这个项目中，你会需要实现一个 Q-learning算法来解决走迷宫问题。同时你有机会将你的算法应用在股市中，让机器学习出高收益策略。</p>
+<h3 id="实战项目5-小狗品种分类"><a href="#实战项目5-小狗品种分类" class="headerlink" title="实战项目5 小狗品种分类"></a>实战项目5 小狗品种分类</h3><p>在这个项目中，你将设计并训练一个卷积神经网络（CNN），来分析狗的图像，并据此准确区分他们的品种。使用迁移学习和其他知名架构来优化这一模型——为更进阶的应用做好准备！</p>
+<h3 id="实战项目6-毕业项目"><a href="#实战项目6-毕业项目" class="headerlink" title="实战项目6 毕业项目"></a>实战项目6 毕业项目</h3><p>选择一个你最感兴趣的内容，用你所学的机器学习和技术解决它。在毕业报告中，如果有引用，也一定要注明出处。</p>
+<ul>
+<li>选择一：训练特斯拉 - 根据车辆的前置相机所拍摄的路况图像，实现对车辆转向角度的预测。</li>
+<li>选择二：驾驶员状态检测 - 使用深度学习方法检测驾驶员的状态，有效降低事故发生。</li>
+<li>选择三：猫狗大战 - 使用深度学习方法识别图片中是猫还是狗。</li>
+<li>选择四：文档自动分类 - 利用自然语言处理技术对大量分档实现精准自动归类。</li>
+<li>选择五：语音性别识别 - 使用机器学习的方法判断一段音频信号是男性还是女性。</li>
+<li>选择六：预测Rossmann未来的销售额 - 根据Rossmann药妆店的信息（比如促销，竞争对手，节假日）以及在过去的销售情况，来预测Rossmann未来的销售额。</li>
+<li>选择七：识别机器人用户 - 根据提供的拍卖数据，识别出混在正常用户中的机器人用户。</li>
+</ul>
+
     
 
         <a href="/2018/01/16/ai-leaning/" class="post-more waves-effect waves-button">
@@ -571,11 +694,57 @@ i={\sqrt[{n}]{\left({\frac {FV}{PV}}\right)}}-1\alpha+\beta=\gammax = {-b \pm \s
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        Lesson-10 def函数1234def function():    print('This is a function')    a=1+2    print(a)
-1function()
-This is a function
+        <h1 id="Lesson-10-def函数"><a href="#Lesson-10-def函数" class="headerlink" title="Lesson-10 def函数"></a>Lesson-10 def函数</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">function</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">'This is a function'</span>)</span><br><span class="line">    a=<span class="number">1</span>+<span class="number">2</span></span><br><span class="line">    print(a)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">function()</span><br></pre></td></tr></table></figure>
+<pre><code>This is a function
 3
-Lesson-11 def函数参数1234def function(a,b):    c=a*b    print('The c is',c)#    p...
+</code></pre><h1 id="Lesson-11-def函数参数"><a href="#Lesson-11-def函数参数" class="headerlink" title="Lesson-11 def函数参数"></a>Lesson-11 def函数参数</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">function</span><span class="params">(a,b)</span>:</span></span><br><span class="line">    c=a*b</span><br><span class="line">    print(<span class="string">'The c is'</span>,c)</span><br><span class="line"><span class="comment">#    print(a)</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">function(<span class="number">3</span>,<span class="number">4</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>The c is 12
+</code></pre><h1 id="Lesson-12-def默认函数参数"><a href="#Lesson-12-def默认函数参数" class="headerlink" title="Lesson-12 def默认函数参数"></a>Lesson-12 def默认函数参数</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sale_car</span><span class="params">(price,colour,brand,is_second_hand,)</span>:</span></span><br><span class="line">    print(<span class="string">'price:'</span>,price,</span><br><span class="line">          <span class="string">'colour:'</span>,colour,</span><br><span class="line">         <span class="string">'brand:'</span>,brand,</span><br><span class="line">         <span class="string">'is_second_hand:'</span>,is_second_hand)</span><br><span class="line"></span><br><span class="line">sale_car(<span class="number">1000</span>,<span class="string">'green'</span>,<span class="string">'carmy'</span>,<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>price: 1000 colour: green brand: carmy is_second_hand: True
+</code></pre><h1 id="Lesson13-全局和局部变量"><a href="#Lesson13-全局和局部变量" class="headerlink" title="Lesson13 全局和局部变量"></a>Lesson13 全局和局部变量</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fun</span><span class="params">()</span>:</span></span><br><span class="line">    a=<span class="number">10</span></span><br><span class="line">    print(a)</span><br><span class="line">    <span class="keyword">return</span> a+<span class="number">100</span></span><br><span class="line">print(fun())</span><br></pre></td></tr></table></figure>
+<pre><code>10
+110
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">apple=<span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fun</span><span class="params">()</span>:</span></span><br><span class="line">    a=<span class="number">10</span></span><br><span class="line">    print(a)</span><br><span class="line">    <span class="keyword">return</span> a+<span class="number">100</span></span><br><span class="line"></span><br><span class="line">print(apple)</span><br><span class="line">print(fun())</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+<pre><code>100
+10
+110
+
+---------------------------------------------------------------------------
+
+NameError                                 Traceback (most recent call last)
+
+&lt;ipython-input-6-8c176668a433&gt; in &lt;module&gt;()
+      8 print(apple)
+      9 print(fun())
+---&gt; 10 print(a)
+
+
+NameError: name &#39;a&#39; is not defined
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">apple=<span class="number">100</span></span><br><span class="line">a=<span class="keyword">None</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fun</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">global</span> a</span><br><span class="line">    a=<span class="number">20</span></span><br><span class="line">    <span class="keyword">return</span> a+<span class="number">100</span></span><br><span class="line"></span><br><span class="line">print(apple)</span><br><span class="line">print(a)</span><br><span class="line">print(fun())</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+<pre><code>100
+None
+120
+20
+</code></pre><h1 id="Lesson14-模块安装"><a href="#Lesson14-模块安装" class="headerlink" title="Lesson14 模块安装"></a>Lesson14 模块安装</h1><ul>
+<li><h3 id="安装模块"><a href="#安装模块" class="headerlink" title="安装模块"></a>安装模块</h3></li>
+</ul>
+<p><code shell="">#sudo pip3 install module_name</code></p>
+<ul>
+<li><h3 id="更新模块"><a href="#更新模块" class="headerlink" title="更新模块"></a>更新模块</h3></li>
+</ul>
+<p><code>#sudo pip3 install -U module_name</code></p>
+<ul>
+<li><h3 id="卸载模块"><a href="#卸载模块" class="headerlink" title="卸载模块"></a>卸载模块</h3></li>
+</ul>
+<p><code>#sudo pip3 uninstall module_name</code></p>
+<h1 id="Lesson15-读写文件1"><a href="#Lesson15-读写文件1" class="headerlink" title="Lesson15 读写文件1"></a>Lesson15 读写文件1</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">text = <span class="string">"This is my first test.\nThis is next line.\nThis is last line."</span></span><br><span class="line">print(text)</span><br></pre></td></tr></table></figure>
+<pre><code>This is my first test.
+This is next line.
+This is last line.
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">my_file=open(<span class="string">'my_file.txt'</span>,<span class="string">'w'</span>)</span><br><span class="line">my_file.write(text)</span><br><span class="line">my_file.close()</span><br></pre></td></tr></table></figure>
+
     
 
         <a href="/2018/01/16/Python-leaning-2/" class="post-more waves-effect waves-button">
@@ -620,12 +789,130 @@ Lesson-11 def函数参数1234def function(a,b):    c=a*b    print('The c is',c)#
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        学习周莫烦的Python基础教程
-教程播放列表https://www.youtube.com/playlist?list=PLXO45tsB95cIRP5gCi8AlYwQ1uFO2aQBw
-文字版和代码包地址https://morvanzhou.github.io/tutorials/
-
-Lesson-02没有做lesson01的笔记，就是安装什么的，教程使用的Python版本是3.5
-只...
+        <h1 id="学习周莫烦的Python基础教程"><a href="#学习周莫烦的Python基础教程" class="headerlink" title="学习周莫烦的Python基础教程"></a>学习周莫烦的Python基础教程</h1><ul>
+<li>教程播放列表<br><a href="https://www.youtube.com/playlist?list=PLXO45tsB95cIRP5gCi8AlYwQ1uFO2aQBw" title="点击前往" target="_blank" rel="noopener">https://www.youtube.com/playlist?list=PLXO45tsB95cIRP5gCi8AlYwQ1uFO2aQBw</a></li>
+<li>文字版和代码包地址<br><a href="https://morvanzhou.github.io/tutorials/" title="点击前往" target="_blank" rel="noopener">https://morvanzhou.github.io/tutorials/</a></li>
+</ul>
+<h1 id="Lesson-02"><a href="#Lesson-02" class="headerlink" title="Lesson-02"></a>Lesson-02</h1><p>没有做lesson01的笔记，就是安装什么的，教程使用的Python版本是3.5</p>
+<p>只有在Python版本3以上才可以这样做：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>1
+</code></pre><p>在Python3上执行下面的例子会报错：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>File “<ipython-input-8-08890221e919>“, line 1<br>  print 1<br>        ^<br>SyntaxError: Missing parentheses in call to ‘print’</ipython-input-8-08890221e919></p>
+<p>双引号和单引号的用法</p>
+<ul>
+<li>引号内可以用“\”做转义字符</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">'we\'re going to do something'</span>)</span><br></pre></td></tr></table></figure>
+<p>we’re going to do something</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"I'm Morvan"</span>)</span><br></pre></td></tr></table></figure>
+<p>I’m Morvan</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">'apple'</span>+<span class="string">'car'</span>)</span><br></pre></td></tr></table></figure>
+<p>applecar</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="number">1</span>+<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+<p>3</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="number">1.0</span>+<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+<p>3.0</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="number">1.2</span>+<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+<p>3.2</p>
+<h1 id="Lesson-03-算术运算"><a href="#Lesson-03-算术运算" class="headerlink" title="Lesson-03 算术运算"></a>Lesson-03 算术运算</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>+<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>2</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span><span class="number">-1</span></span><br></pre></td></tr></table></figure>
+<p>0</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span>*<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<p>4</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3</span>**<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<p>9</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span>**<span class="number">4</span></span><br></pre></td></tr></table></figure>
+<p>16</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">8</span>%<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<p>0</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">8</span>%<span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p>2</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">9</span>//<span class="number">4</span></span><br></pre></td></tr></table></figure>
+<p>2</p>
+<h1 id="Lesson-04-变量"><a href="#Lesson-04-变量" class="headerlink" title="Lesson-04 变量"></a>Lesson-04 变量</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apple_egg=<span class="number">10</span>+<span class="number">4</span></span><br><span class="line">print(apple_egg)</span><br></pre></td></tr></table></figure>
+<p>14</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">1</span>; b = <span class="number">2</span>; c = <span class="number">3</span></span><br><span class="line">print(a,b,c)</span><br></pre></td></tr></table></figure>
+<p>1 2 3</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a,b,c = <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span></span><br><span class="line">print(a,b,c)</span><br></pre></td></tr></table></figure>
+<p>1 2 3</p>
+<h1 id="Lesson-05-While循环"><a href="#Lesson-05-While循环" class="headerlink" title="Lesson-05 While循环"></a>Lesson-05 While循环</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">condition = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> condition &lt; <span class="number">10</span>:</span><br><span class="line">    print(condition)</span><br><span class="line">    condition = condition + <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<pre><code>1
+2
+3
+4
+5
+6
+7
+8
+9
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">    print(<span class="string">"I'm true"</span>)</span><br></pre></td></tr></table></figure>
+<h1 id="Lesson-06-For循环"><a href="#Lesson-06-For循环" class="headerlink" title="Lesson-06 For循环"></a>Lesson-06 For循环</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">example_list=[<span class="number">2</span>,<span class="number">35</span>,<span class="number">213</span>,<span class="number">54</span>,<span class="number">37</span>,<span class="number">44</span>,<span class="number">234</span>,<span class="number">77</span>,<span class="number">43</span>,<span class="number">62</span>,<span class="number">445</span>,<span class="number">75</span>,<span class="number">33</span>,<span class="number">22</span>,<span class="number">87</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> example_list:</span><br><span class="line">    print(i)</span><br><span class="line">    print(<span class="string">'inner of For loop'</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">'out of For loop'</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>2
+inner of For loop
+35
+inner of For loop
+213
+inner of For loop
+54
+inner of For loop
+37
+inner of For loop
+44
+inner of For loop
+234
+inner of For loop
+77
+inner of For loop
+43
+inner of For loop
+62
+inner of For loop
+445
+inner of For loop
+75
+inner of For loop
+33
+inner of For loop
+22
+inner of For loop
+87
+inner of For loop
+out of For loop
+</code></pre><h3 id="注意range-规定的范围会少执行1步"><a href="#注意range-规定的范围会少执行1步" class="headerlink" title="注意range()规定的范围会少执行1步"></a>注意range()规定的范围会少执行1步</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">10</span>):</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure>
+<pre><code>1
+2
+3
+4
+5
+6
+7
+8
+9
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">10</span>,<span class="number">2</span>):</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure>
+<pre><code>1
+3
+5
+7
+9
+</code></pre><h1 id="Lesson-07-if-条件"><a href="#Lesson-07-if-条件" class="headerlink" title="Lesson-07 if 条件"></a>Lesson-07 if 条件</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x,y,z = <span class="number">1</span>,<span class="number">2</span>,<span class="number">0</span></span><br><span class="line"><span class="keyword">if</span> x &lt; y &gt; z:</span><br><span class="line">    print(<span class="string">'x is less than y, and y is less than z'</span>)</span><br></pre></td></tr></table></figure>
+<p>x is less than y, and y is less than z</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x,y,z = <span class="number">2</span>,<span class="number">2</span>,<span class="number">0</span></span><br><span class="line"><span class="keyword">if</span> x &lt;= y :</span><br><span class="line">    print(<span class="string">'x is less or equal to y'</span>)</span><br></pre></td></tr></table></figure>
+<p>x is less or equal to y</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x,y,z = <span class="number">3</span>,<span class="number">3</span>,<span class="number">0</span></span><br><span class="line"><span class="keyword">if</span> x == y :</span><br><span class="line">    print(<span class="string">'x is equal to y'</span>)</span><br></pre></td></tr></table></figure>
+<p>x is equal to y</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x,y,z = <span class="number">3</span>,<span class="number">2</span>,<span class="number">0</span></span><br><span class="line"><span class="keyword">if</span> x != y :</span><br><span class="line">    print(<span class="string">'x is not equal to y'</span>)</span><br></pre></td></tr></table></figure>
+<p>x is not equal to y</p>
+<h1 id="Lesson-08-if-else条件"><a href="#Lesson-08-if-else条件" class="headerlink" title="Lesson-08 if else条件"></a>Lesson-08 if else条件</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">x,y,z = <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span></span><br><span class="line"><span class="keyword">if</span> x&gt;y :</span><br><span class="line">    print(<span class="string">'x is greater than y'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'x is less or equal to y'</span>)</span><br></pre></td></tr></table></figure>
+<p>x is less or equal to y</p>
+<h1 id="Lesson-09-if-elif-else条件"><a href="#Lesson-09-if-elif-else条件" class="headerlink" title="Lesson-09 if elif else条件"></a>Lesson-09 if elif else条件</h1><ul>
+<li>可以有多个elif</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">x,y,z = <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span></span><br><span class="line"><span class="keyword">if</span> x&gt;y:</span><br><span class="line">    print(<span class="string">'x is greater than y'</span>)</span><br><span class="line"><span class="keyword">elif</span> x&gt;z:</span><br><span class="line">    print(<span class="string">'x is less or equal to y'</span>)</span><br><span class="line"><span class="keyword">elif</span> x&lt;z:</span><br><span class="line">    print(<span class="string">'x&lt;z'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'......'</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>x&lt;z
+</code></pre>
     
 
         <a href="/2018/01/14/Python-leaning/" class="post-more waves-effect waves-button">
@@ -670,10 +957,10 @@ Lesson-02没有做lesson01的笔记，就是安装什么的，教程使用的Pyt
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        最近准备好好学习，天天向上，同时用这个博客做学习笔记。
-测试一下页面效果，嘿嘿！
-
-这是在安装jekyll时自动产生的文章，当时对标题和内容做了修改，留念
+        <p>最近准备好好学习，天天向上，同时用这个博客做学习笔记。</p>
+<p>测试一下页面效果，嘿嘿！</p>
+<hr>
+<p>这是在安装jekyll时自动产生的文章，当时对标题和内容做了修改，留念</p>
 
     
 
@@ -792,7 +1079,7 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 </script>
 
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+<script src="/js/main.min.js?v=1.7.2"></script>
 
 
 <div class="search-panel" id="search-panel">
@@ -812,7 +1099,7 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 </li>
 </template>
 
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+<script src="/js/search.min.js?v=1.7.2" async></script>
 
 
 
