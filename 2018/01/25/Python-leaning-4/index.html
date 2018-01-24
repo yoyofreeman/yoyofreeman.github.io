@@ -28,7 +28,7 @@
 <meta property="og:site_name" content="我的学习和实验记录">
 <meta property="og:description" content="Lesson19 类的init(初始化)功能123456789101112131415161718192021class Calculator:    #类的名称一般用大写字母开头，这是python对类进行命名的习惯用法    name = &apos;Good calculator&apos;    price = 18    def __init__(self,name,price,hight,width,wei">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2018-01-24T16:56:27.172Z">
+<meta property="og:updated_time" content="2018-01-24T17:15:33.284Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python基础学习第四天">
 <meta name="twitter:description" content="Lesson19 类的init(初始化)功能123456789101112131415161718192021class Calculator:    #类的名称一般用大写字母开头，这是python对类进行命名的习惯用法    name = &apos;Good calculator&apos;    price = 18    def __init__(self,name,price,hight,width,wei">
@@ -132,7 +132,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="検索">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -173,7 +173,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Lesson19-类的init-初始化-功能"><span class="post-toc-text">Lesson19 类的init(初始化)功能</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Lesson20-input"><span class="post-toc-text">Lesson20 input</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Lesson21-元组-列表"><span class="post-toc-text">Lesson21 元组 列表</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Lesson19-类的init-初始化-功能"><span class="post-toc-text">Lesson19 类的init(初始化)功能</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Lesson20-input"><span class="post-toc-text">Lesson20 input</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Lesson21-元组-列表"><span class="post-toc-text">Lesson21 元组 列表</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Lesson22"><span class="post-toc-text">Lesson22</span></a></li></ol>
         </nav>
     </aside>
 
@@ -239,6 +239,27 @@ index= 2 number in list= 4
 index= 3 number in list= 5
 index= 4 number in list= 32
 index= 5 number in list= 43
+</code></pre><h1 id="Lesson22"><a href="#Lesson22" class="headerlink" title="Lesson22"></a>Lesson22</h1><ul>
+<li>列表就是一系列有序的数列</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">a=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line">print(a)</span><br><span class="line">a.append(<span class="number">0</span>)</span><br><span class="line">print(a)</span><br><span class="line">a.insert(<span class="number">1</span>,<span class="number">0</span>)    <span class="comment">#1是index值</span></span><br><span class="line">print(a)</span><br><span class="line">a.remove(<span class="number">5</span>)      <span class="comment">#5是需要移除的数值</span></span><br><span class="line">print(a)</span><br><span class="line">a.remove(<span class="number">0</span>)      <span class="comment">#只会移除第一个符合的值</span></span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+<pre><code>[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5, 0]
+[1, 0, 2, 3, 4, 5, 0]
+[1, 0, 2, 3, 4, 0]
+[1, 2, 3, 4, 0]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line">print(a[<span class="number">-1</span>])    <span class="comment">#-1代表列表中最后一个值</span></span><br></pre></td></tr></table></figure>
+<pre><code>5
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(a[<span class="number">2</span>:<span class="number">5</span>])</span><br></pre></td></tr></table></figure>
+<pre><code>[3, 4, 5]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a.index(<span class="number">2</span>)    <span class="comment">#index方法返回元素的索引值</span></span><br></pre></td></tr></table></figure>
+<pre><code>1
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a=[<span class="number">4</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">-1</span>]   <span class="comment">#count方法用于统计元素出现的次数</span></span><br><span class="line">a.count(<span class="number">4</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>3
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a.sort()</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+<pre><code>[-1, 1, 2, 3, 3, 4, 4, 4, 5, 6]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a.sort(reverse=<span class="keyword">True</span>)</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+<pre><code>[6, 5, 4, 4, 4, 3, 3, 2, 1, -1]
 </code></pre>
         </div>
 
@@ -247,7 +268,7 @@ index= 5 number in list= 43
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2018-01-24T16:56:27.172Z" itemprop="dateUpdated">2018-01-25 00:56:27</time>
+    最終更新：<time datetime="2018-01-24T17:15:33.284Z" itemprop="dateUpdated">2018-01-25 01:15:33</time>
 </span><br>
 
 
@@ -405,7 +426,7 @@ index= 5 number in list= 43
             
                 <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
             
-            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+            <span>このブログの内容物は<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a></span>
         </p>
     </div>
     <div class="bottom">
