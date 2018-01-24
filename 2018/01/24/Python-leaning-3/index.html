@@ -28,7 +28,7 @@
 <meta property="og:site_name" content="我的学习和实验记录">
 <meta property="og:description" content="复习前课内容Lesson-12 def默认函数参数1234567def sale_car(price,colour,brand,is_second_hand,):    print(&apos;price:&apos;,price,          &apos;colour:&apos;,colour,         &apos;brand:&apos;,brand,         &apos;is_second_hand:&apos;,is_second_hand)s">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2018-01-24T15:21:00.229Z">
+<meta property="og:updated_time" content="2018-01-24T15:55:30.909Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python基础学习第三天">
 <meta name="twitter:description" content="复习前课内容Lesson-12 def默认函数参数1234567def sale_car(price,colour,brand,is_second_hand,):    print(&apos;price:&apos;,price,          &apos;colour:&apos;,colour,         &apos;brand:&apos;,brand,         &apos;is_second_hand:&apos;,is_second_hand)s">
@@ -173,7 +173,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#复习前课内容"><span class="post-toc-text">复习前课内容</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Lesson-12-def默认函数参数"><span class="post-toc-text">Lesson-12 def默认函数参数</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Lesson13-全局和局部变量"><span class="post-toc-text">Lesson13 全局和局部变量</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#复习前课内容"><span class="post-toc-text">复习前课内容</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Lesson-12-def默认函数参数"><span class="post-toc-text">Lesson-12 def默认函数参数</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Lesson13-全局和局部变量"><span class="post-toc-text">Lesson13 全局和局部变量</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Lesson16-读写文件2"><span class="post-toc-text">Lesson16 读写文件2</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Lesson17-读写文件3"><span class="post-toc-text">Lesson17 读写文件3</span></a></li></ol>
         </nav>
     </aside>
 
@@ -236,6 +236,18 @@ NameError: name &#39;a&#39; is not defined
 None
 120
 20
+</code></pre><h1 id="Lesson16-读写文件2"><a href="#Lesson16-读写文件2" class="headerlink" title="Lesson16 读写文件2"></a>Lesson16 读写文件2</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">append_text = <span class="string">"\n This is appended line."</span></span><br><span class="line"></span><br><span class="line">my_file=open(<span class="string">'my_file.txt'</span>,<span class="string">'a'</span>) <span class="comment">#注意这里的'a'代表调用open函数的append方法</span></span><br><span class="line">my_file.write(append_text)</span><br><span class="line">my_file.close()</span><br></pre></td></tr></table></figure>
+<h1 id="Lesson17-读写文件3"><a href="#Lesson17-读写文件3" class="headerlink" title="Lesson17 读写文件3"></a>Lesson17 读写文件3</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">file = open(<span class="string">'my_file.txt'</span>,<span class="string">'r'</span>)    <span class="comment">#读取指定文件</span></span><br><span class="line">content = file.read()</span><br><span class="line">print(content)</span><br></pre></td></tr></table></figure>
+<pre><code>This is my first test.
+This is next line.
+This is last line.
+ This is appended line.
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">file = open(<span class="string">'my_file.txt'</span>,<span class="string">'r'</span>)</span><br><span class="line">content = file.readline()    <span class="comment">#redline方法每次只能读1行</span></span><br><span class="line">second_read_time = file.readline()</span><br><span class="line">print(content,second_read_time)</span><br></pre></td></tr></table></figure>
+<pre><code>This is my first test.
+ This is next line.
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">file = open(<span class="string">'my_file.txt'</span>,<span class="string">'r'</span>)</span><br><span class="line">content = file.readlines()    <span class="comment">#readlines方法可以读取所有的行</span></span><br><span class="line">print(content[<span class="number">0</span>],content[<span class="number">1</span>])  <span class="comment">#然后可以用列表的方式使用它的内容</span></span><br></pre></td></tr></table></figure>
+<pre><code>This is my first test.
+ This is next line.
 </code></pre>
         </div>
 
@@ -244,7 +256,7 @@ None
     <div class="content">
         
 <span class="post-time">
-    最終更新：<time datetime="2018-01-24T15:21:00.229Z" itemprop="dateUpdated">2018-01-24 23:21:00</time>
+    最終更新：<time datetime="2018-01-24T15:55:30.909Z" itemprop="dateUpdated">2018-01-24 23:55:30</time>
 </span><br>
 
 
