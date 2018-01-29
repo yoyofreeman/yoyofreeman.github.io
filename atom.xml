@@ -121,6 +121,34 @@
   </entry>
   
   <entry>
+    <title>2018年1月总结</title>
+    <link href="https://yoyofreeman.github.io/2018/01/19/2018-01-xx-conclusion/"/>
+    <id>https://yoyofreeman.github.io/2018/01/19/2018-01-xx-conclusion/</id>
+    <published>2018-01-18T18:07:00.000Z</published>
+    <updated>2018-01-29T11:02:30.791Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>使用hexo和github为自己搭建了一个博客站点，用于放置和记录一些自己认为有价值的内容。</li><li>学习了Python基础，走马观花式的过了一遍莫凡的视频教程；</li><li>MXnet机器学习库刚开了个头，感觉自己对于高数、线代和概率论的知识太匮乏；</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;使用hexo和github为自己搭建了一个博客站点，用于放置和记录一些自己认为有价值的内容。&lt;/li&gt;
+&lt;li&gt;学习了Python基础，走马观花式的过了一遍莫凡的视频教程；&lt;/li&gt;
+&lt;li&gt;MXnet机器学习库刚开了个头，感觉自己对于高数、线代和概率论的知识太
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="https://yoyofreeman.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="月度总结" scheme="https://yoyofreeman.github.io/tags/%E6%9C%88%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MXnet学习第一天（2）</title>
     <link href="https://yoyofreeman.github.io/2018/01/19/MXnet-leaning-1/"/>
     <id>https://yoyofreeman.github.io/2018/01/19/MXnet-leaning-1/</id>
@@ -171,6 +199,32 @@
       <category term="AI" scheme="https://yoyofreeman.github.io/tags/AI/"/>
     
       <category term="MXnet" scheme="https://yoyofreeman.github.io/tags/MXnet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018年2月计划</title>
+    <link href="https://yoyofreeman.github.io/2018/01/19/2018-02-xx-plan/"/>
+    <id>https://yoyofreeman.github.io/2018/01/19/2018-02-xx-plan/</id>
+    <published>2018-01-18T18:07:00.000Z</published>
+    <updated>2018-01-29T11:12:50.730Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="学习内容主线"><a href="#学习内容主线" class="headerlink" title="学习内容主线"></a>学习内容主线</h3><ul><li>使用github的issue为博客站点增加评论功能，能完成与博客读者最简单的文字交互就行。</li><li>继续学习和熟悉Python基础知识，尝试用python读取和清洗期货数据；</li><li>继续跟学MXnet机器学习视频教程；</li><li>学习高数、线代和概率论基础知识；</li></ul><h3 id="学习内容辅线"><a href="#学习内容辅线" class="headerlink" title="学习内容辅线"></a>学习内容辅线</h3><ul><li>抽空继续进行斯特林发动机实验；</li><li>抽空继续进行adsp-28375实验板制作，熟悉编程环境和工具链的使用。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;学习内容主线&quot;&gt;&lt;a href=&quot;#学习内容主线&quot; class=&quot;headerlink&quot; title=&quot;学习内容主线&quot;&gt;&lt;/a&gt;学习内容主线&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;使用github的issue为博客站点增加评论功能，能完成与博客读者最简单的文字交互就行。&lt;/l
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="https://yoyofreeman.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="月度计划" scheme="https://yoyofreeman.github.io/tags/%E6%9C%88%E5%BA%A6%E8%AE%A1%E5%88%92/"/>
     
   </entry>
   
