@@ -80,9 +80,9 @@
     <link href="https://yoyofreeman.github.io/2018/01/29/Python-data-manipulation/"/>
     <id>https://yoyofreeman.github.io/2018/01/29/Python-data-manipulation/</id>
     <published>2018-01-29T12:46:00.000Z</published>
-    <updated>2018-01-29T13:22:27.144Z</updated>
+    <updated>2018-01-30T20:41:16.428Z</updated>
     
-    <content type="html"><![CDATA[<ul><li>还是使用莫凡的视频教程<br><a href="https://morvanzhou.github.io/tutorials/data-manipulation/" target="_blank" rel="noopener">https://morvanzhou.github.io/tutorials/data-manipulation/</a></li></ul><ol><li>Numpy &amp; Pandas 简介<br>1.1 Why Numpy &amp; Pandas?<br>1.2 Numpy 和 Pandas 安装</li><li>Numpy 学习<br>2.1 Numpy 属性<br>2.2 Numpy 的创建 array<br>2.3 Numpy 基础运算1<br>2.4 Numpy 基础运算2<br>2.5 Numpy 索引<br>2.6 Numpy array 合并<br>2.7 Numpy array 分割<br>2.8 Numpy copy &amp; deep copy</li><li>Pandas 学习<br>3.1 Pandas 基本介绍<br>3.2 Pandas 选择数据<br>3.3 Pandas 设置值<br>3.4 Pandas 处理丢失数据<br>3.5 Pandas 导入导出<br>3.6 Pandas 合并 concat<br>3.7 Pandas 合并 merge<br>3.8 Pandas plot 出图</li><li>附加内容<br>4.1 为什么用 Numpy 还是慢, 你用对了吗?</li></ol>]]></content>
+    <content type="html"><![CDATA[<ul><li>还是使用莫凡的视频教程<br><a href="https://morvanzhou.github.io/tutorials/data-manipulation/" target="_blank" rel="noopener">https://morvanzhou.github.io/tutorials/data-manipulation/</a></li></ul><ol><li><a href="/2018/01/29/python-Numpy-Pandas/" title="Numpy &amp; Pandas 简介">Numpy &amp; Pandas 简介</a><br>1.1 Why Numpy &amp; Pandas?<br>1.2 Numpy 和 Pandas 安装</li><li><a href="/2018/01/29/python-Numpy-Learning/" title="Numpy 学习">Numpy 学习</a><br>2.1 Numpy 属性<br>2.2 Numpy 的创建 array<br>2.3 Numpy 基础运算1<br>2.4 Numpy 基础运算2<br>2.5 Numpy 索引<br>2.6 Numpy array 合并<br>2.7 Numpy array 分割<br>2.8 Numpy copy &amp; deep copy</li><li>Pandas 学习<br>3.1 Pandas 基本介绍<br>3.2 Pandas 选择数据<br>3.3 Pandas 设置值<br>3.4 Pandas 处理丢失数据<br>3.5 Pandas 导入导出<br>3.6 Pandas 合并 concat<br>3.7 Pandas 合并 merge<br>3.8 Pandas plot 出图</li><li>附加内容<br>4.1 为什么用 Numpy 还是慢, 你用对了吗?</li></ol>]]></content>
     
     <summary type="html">
     
