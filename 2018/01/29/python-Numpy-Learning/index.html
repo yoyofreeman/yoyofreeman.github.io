@@ -28,7 +28,7 @@
 <meta property="og:site_name" content="我的学习和实验记录">
 <meta property="og:description" content="2. Numpy学习2.1 Numpy属性1import numpy as np 1array = np.array([[1,2,3],[2,3,4]]) 1print(array) [[1 2 3]  [2 3 4]] 1print(&apos;number of dim:&apos;,array.ndim) number of dim: 2 1print(&apos;shape:&apos;,array.shape) shape:">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2018-01-30T21:35:21.613Z">
+<meta property="og:updated_time" content="2018-01-30T21:54:28.035Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Numpy学习">
 <meta name="twitter:description" content="2. Numpy学习2.1 Numpy属性1import numpy as np 1array = np.array([[1,2,3],[2,3,4]]) 1print(array) [[1 2 3]  [2 3 4]] 1print(&apos;number of dim:&apos;,array.ndim) number of dim: 2 1print(&apos;shape:&apos;,array.shape) shape:">
@@ -281,7 +281,74 @@
 <pre><code>2.88936551712
 </code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(np.sum(a,axis=<span class="number">1</span>)) <span class="comment"># axis指定按行或按列计算</span></span><br></pre></td></tr></table></figure>
 <pre><code>[ 1.67945131  1.20991421]
-</code></pre><h3 id="2-4-Numpy-基础运算2"><a href="#2-4-Numpy-基础运算2" class="headerlink" title="2.4 Numpy 基础运算2"></a>2.4 Numpy 基础运算2</h3><h3 id="2-5-Numpy-索引"><a href="#2-5-Numpy-索引" class="headerlink" title="2.5 Numpy 索引"></a>2.5 Numpy 索引</h3><h3 id="2-6-Numpy-array-合并"><a href="#2-6-Numpy-array-合并" class="headerlink" title="2.6 Numpy array 合并"></a>2.6 Numpy array 合并</h3><h3 id="2-7-Numpy-array-分割"><a href="#2-7-Numpy-array-分割" class="headerlink" title="2.7 Numpy array 分割"></a>2.7 Numpy array 分割</h3><h3 id="2-8-Numpy-copy-amp-deep-copy"><a href="#2-8-Numpy-copy-amp-deep-copy" class="headerlink" title="2.8 Numpy copy &amp; deep copy"></a>2.8 Numpy copy &amp; deep copy</h3>
+</code></pre><h3 id="2-4-Numpy-基础运算2"><a href="#2-4-Numpy-基础运算2" class="headerlink" title="2.4 Numpy 基础运算2"></a>2.4 Numpy 基础运算2</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">A = np.arange(<span class="number">2</span>,<span class="number">14</span>).reshape((<span class="number">3</span>,<span class="number">4</span>))</span><br><span class="line">print(A)</span><br></pre></td></tr></table></figure>
+<pre><code>[[ 2  3  4  5]
+ [ 6  7  8  9]
+ [10 11 12 13]]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(np.argmin(A))</span><br></pre></td></tr></table></figure>
+<pre><code>0
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(np.argmax(A))</span><br></pre></td></tr></table></figure>
+<pre><code>11
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(np.mean(A))</span><br></pre></td></tr></table></figure>
+<pre><code>7.5
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(np.average(A))</span><br></pre></td></tr></table></figure>
+<pre><code>7.5
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(np.median(A))</span><br></pre></td></tr></table></figure>
+<pre><code>7.5
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(A)</span><br><span class="line">print(np.cumsum(A))</span><br></pre></td></tr></table></figure>
+<pre><code>[[ 2  3  4  5]
+ [ 6  7  8  9]
+ [10 11 12 13]]
+[ 2  5  9 14 20 27 35 44 54 65 77 90]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(A)</span><br><span class="line">print(np.diff(A))</span><br></pre></td></tr></table></figure>
+<pre><code>[[ 2  3  4  5]
+ [ 6  7  8  9]
+ [10 11 12 13]]
+[[1 1 1]
+ [1 1 1]
+ [1 1 1]]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(A)</span><br><span class="line">print(np.nonzero(A))</span><br></pre></td></tr></table></figure>
+<pre><code>[[ 2  3  4  5]
+ [ 6  7  8  9]
+ [10 11 12 13]]
+(array([0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2], dtype=int64), array([0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3], dtype=int64))
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A = np.arange(<span class="number">14</span>,<span class="number">2</span>,<span class="number">-1</span>).reshape((<span class="number">3</span>,<span class="number">4</span>))</span><br><span class="line">print(A)</span><br><span class="line">print(np.sort(A))</span><br></pre></td></tr></table></figure>
+<pre><code>[[14 13 12 11]
+ [10  9  8  7]
+ [ 6  5  4  3]]
+[[11 12 13 14]
+ [ 7  8  9 10]
+ [ 3  4  5  6]]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(np.transpose(A))</span><br><span class="line">print(A)</span><br><span class="line">print(A.T)</span><br></pre></td></tr></table></figure>
+<pre><code>[[14 10  6]
+ [13  9  5]
+ [12  8  4]
+ [11  7  3]]
+[[14 13 12 11]
+ [10  9  8  7]
+ [ 6  5  4  3]]
+[[14 10  6]
+ [13  9  5]
+ [12  8  4]
+ [11  7  3]]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(A)</span><br><span class="line">print(np.clip(A,<span class="number">5</span>,<span class="number">9</span>))</span><br></pre></td></tr></table></figure>
+<pre><code>[[14 13 12 11]
+ [10  9  8  7]
+ [ 6  5  4  3]]
+[[9 9 9 9]
+ [9 9 8 7]
+ [6 5 5 5]]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(A)</span><br><span class="line">print(np.mean(A,axis=<span class="number">0</span>))</span><br></pre></td></tr></table></figure>
+<pre><code>[[14 13 12 11]
+ [10  9  8  7]
+ [ 6  5  4  3]]
+[ 10.   9.   8.   7.]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(A)</span><br><span class="line">print(np.mean(A,axis=<span class="number">1</span>))</span><br></pre></td></tr></table></figure>
+<pre><code>[[14 13 12 11]
+ [10  9  8  7]
+ [ 6  5  4  3]]
+[ 12.5   8.5   4.5]
+</code></pre><h3 id="2-5-Numpy-索引"><a href="#2-5-Numpy-索引" class="headerlink" title="2.5 Numpy 索引"></a>2.5 Numpy 索引</h3><h3 id="2-6-Numpy-array-合并"><a href="#2-6-Numpy-array-合并" class="headerlink" title="2.6 Numpy array 合并"></a>2.6 Numpy array 合并</h3><h3 id="2-7-Numpy-array-分割"><a href="#2-7-Numpy-array-分割" class="headerlink" title="2.7 Numpy array 分割"></a>2.7 Numpy array 分割</h3><h3 id="2-8-Numpy-copy-amp-deep-copy"><a href="#2-8-Numpy-copy-amp-deep-copy" class="headerlink" title="2.8 Numpy copy &amp; deep copy"></a>2.8 Numpy copy &amp; deep copy</h3>
         </div>
 
         <blockquote class="post-copyright">
@@ -289,7 +356,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2018-01-30T21:35:21.613Z" itemprop="dateUpdated">2018-01-31 05:35:21</time>
+    Last updated: <time datetime="2018-01-30T21:54:28.035Z" itemprop="dateUpdated">2018-01-31 05:54:28</time>
 </span><br>
 
 
