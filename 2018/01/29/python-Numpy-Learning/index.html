@@ -28,7 +28,7 @@
 <meta property="og:site_name" content="我的学习和实验记录">
 <meta property="og:description" content="2. Numpy学习2.1 Numpy属性1import numpy as np 1array = np.array([[1,2,3],[2,3,4]]) 1print(array) [[1 2 3]  [2 3 4]] 1print(&apos;number of dim:&apos;,array.ndim) number of dim: 2 1print(&apos;shape:&apos;,array.shape) shape:">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2018-01-30T21:54:28.035Z">
+<meta property="og:updated_time" content="2018-01-31T00:14:30.775Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Numpy学习">
 <meta name="twitter:description" content="2. Numpy学习2.1 Numpy属性1import numpy as np 1array = np.array([[1,2,3],[2,3,4]]) 1print(array) [[1 2 3]  [2 3 4]] 1print(&apos;number of dim:&apos;,array.ndim) number of dim: 2 1print(&apos;shape:&apos;,array.shape) shape:">
@@ -348,7 +348,96 @@
  [10  9  8  7]
  [ 6  5  4  3]]
 [ 12.5   8.5   4.5]
-</code></pre><h3 id="2-5-Numpy-索引"><a href="#2-5-Numpy-索引" class="headerlink" title="2.5 Numpy 索引"></a>2.5 Numpy 索引</h3><h3 id="2-6-Numpy-array-合并"><a href="#2-6-Numpy-array-合并" class="headerlink" title="2.6 Numpy array 合并"></a>2.6 Numpy array 合并</h3><h3 id="2-7-Numpy-array-分割"><a href="#2-7-Numpy-array-分割" class="headerlink" title="2.7 Numpy array 分割"></a>2.7 Numpy array 分割</h3><h3 id="2-8-Numpy-copy-amp-deep-copy"><a href="#2-8-Numpy-copy-amp-deep-copy" class="headerlink" title="2.8 Numpy copy &amp; deep copy"></a>2.8 Numpy copy &amp; deep copy</h3>
+</code></pre><h3 id="2-5-Numpy-索引"><a href="#2-5-Numpy-索引" class="headerlink" title="2.5 Numpy 索引"></a>2.5 Numpy 索引</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A = np.arange(<span class="number">3</span>,<span class="number">15</span>)</span><br><span class="line">print(A)</span><br></pre></td></tr></table></figure>
+<pre><code>[ 3  4  5  6  7  8  9 10 11 12 13 14]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(A[<span class="number">3</span>])</span><br></pre></td></tr></table></figure>
+<pre><code>6
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A = np.arange(<span class="number">3</span>,<span class="number">15</span>).reshape((<span class="number">3</span>,<span class="number">4</span>))</span><br><span class="line">print(A)</span><br><span class="line">print(A[<span class="number">2</span>])</span><br></pre></td></tr></table></figure>
+<pre><code>[[ 3  4  5  6]
+ [ 7  8  9 10]
+ [11 12 13 14]]
+[11 12 13 14]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(A[<span class="number">1</span>][<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
+<pre><code>8
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(A[<span class="number">2</span>][<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
+<pre><code>12
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(A[<span class="number">2</span>,<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
+<pre><code>12
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(A[<span class="number">2</span>,:])</span><br></pre></td></tr></table></figure>
+<pre><code>[11 12 13 14]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(A[:,<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
+<pre><code>[ 4  8 12]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(A[<span class="number">1</span>,<span class="number">1</span>:<span class="number">2</span>])</span><br></pre></td></tr></table></figure>
+<pre><code>[8]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(A[<span class="number">1</span>,<span class="number">1</span>:<span class="number">3</span>])</span><br></pre></td></tr></table></figure>
+<pre><code>[8 9]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> row <span class="keyword">in</span> A:</span><br><span class="line">    print(row)</span><br></pre></td></tr></table></figure>
+<pre><code>[3 4 5 6]
+[ 7  8  9 10]
+[11 12 13 14]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">print(A)</span><br><span class="line">print(A.T)</span><br><span class="line"><span class="keyword">for</span> column <span class="keyword">in</span> A.T:</span><br><span class="line">    print(column)</span><br></pre></td></tr></table></figure>
+<pre><code>[[ 3  4  5  6]
+ [ 7  8  9 10]
+ [11 12 13 14]]
+[[ 3  7 11]
+ [ 4  8 12]
+ [ 5  9 13]
+ [ 6 10 14]]
+[ 3  7 11]
+[ 4  8 12]
+[ 5  9 13]
+[ 6 10 14]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(A.flatten())</span><br><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> A.flat:</span><br><span class="line">    print(item)</span><br></pre></td></tr></table></figure>
+<pre><code>[ 3  4  5  6  7  8  9 10 11 12 13 14]
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</code></pre><h3 id="2-6-Numpy-array-合并"><a href="#2-6-Numpy-array-合并" class="headerlink" title="2.6 Numpy array 合并"></a>2.6 Numpy array 合并</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A = np.array([<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>])</span><br><span class="line">B = np.array([<span class="number">2</span>,<span class="number">1</span>,<span class="number">1</span>])</span><br><span class="line">print(np.vstack((A,B))) <span class="comment"># 上下合并A和B</span></span><br></pre></td></tr></table></figure>
+<pre><code>[[1 1 1]
+ [2 1 1]]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C = np.vstack((A,B))</span><br><span class="line">print(A.shape,C.shape)</span><br></pre></td></tr></table></figure>
+<pre><code>(3,) (2, 3)
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">D = np.hstack((A,B)) <span class="comment"># 左右合并</span></span><br><span class="line">print(D)</span><br><span class="line">print(A.shape,D.shape)</span><br></pre></td></tr></table></figure>
+<pre><code>[1 1 1 2 1 1]
+(3,) (6,)
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(A.T)</span><br></pre></td></tr></table></figure>
+<pre><code>[1 1 1]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(A)</span><br><span class="line">print(A[:,np.newaxis])</span><br></pre></td></tr></table></figure>
+<pre><code>[1 1 1]
+[[1]
+ [1]
+ [1]]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C = np.concatenate((A,B,B,A))</span><br><span class="line">print(C)</span><br></pre></td></tr></table></figure>
+<pre><code>[1 1 1 2 1 1 2 1 1 1 1 1]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A = np.array([<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>])[:,np.newaxis]</span><br><span class="line">B = np.array([<span class="number">2</span>,<span class="number">2</span>,<span class="number">2</span>])[:,np.newaxis]</span><br><span class="line">C = np.concatenate((A,B,B,A),axis=<span class="number">1</span>)</span><br><span class="line">print(C)</span><br></pre></td></tr></table></figure>
+<pre><code>[[1 2 2 1]
+ [1 2 2 1]
+ [1 2 2 1]]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C = np.concatenate((A,B,B,A),axis=<span class="number">0</span>)</span><br><span class="line">print(C)</span><br></pre></td></tr></table></figure>
+<pre><code>[[1]
+ [1]
+ [1]
+ [2]
+ [2]
+ [2]
+ [2]
+ [2]
+ [2]
+ [1]
+ [1]
+ [1]]
+</code></pre><h3 id="2-7-Numpy-array-分割"><a href="#2-7-Numpy-array-分割" class="headerlink" title="2.7 Numpy array 分割"></a>2.7 Numpy array 分割</h3><h3 id="2-8-Numpy-copy-amp-deep-copy"><a href="#2-8-Numpy-copy-amp-deep-copy" class="headerlink" title="2.8 Numpy copy &amp; deep copy"></a>2.8 Numpy copy &amp; deep copy</h3>
         </div>
 
         <blockquote class="post-copyright">
@@ -356,7 +445,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2018-01-30T21:54:28.035Z" itemprop="dateUpdated">2018-01-31 05:54:28</time>
+    Last updated: <time datetime="2018-01-31T00:14:30.775Z" itemprop="dateUpdated">2018-01-31 08:14:30</time>
 </span><br>
 
 
